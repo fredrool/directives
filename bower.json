@@ -1,0 +1,20 @@
+{
+  "name": "directives",
+  "version": "0.0.0",
+  "main": "./angular.js",
+  "authors": [
+    "Frederick Rouleau"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "bootstrap": "3.3.4"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "directives",
+  "version": "1.0.0",
+  "description": "Angular Directives",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.5.2",
+    "gulp": "^3.9.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-inject": "^1.5.0",
+    "wiredep": "^2.2.2"
+  },
+  "dependencies": {
+    "gulp-webserver": "^0.9.1"
+  }
+}
