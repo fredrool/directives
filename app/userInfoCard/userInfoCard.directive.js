@@ -1,9 +1,11 @@
 (function(){
+	'use strict';
+	
 	// Component Directive
 	angular.module('app').directive('userInfoCard', function() {
 		return {
 			// template: 'Name: {{user.name}}<br/><br/><div ng-show="!!user.address">Address: {{user.address.street}}<br/>City: {{user.address.city}}<br/>Country: {{user.address.country}}</div><br/>Friends: <div ng-repeat="friend in user.friends">{{friend}}</div>',
-			templateUrl: "app/userInfoCard.html",
+			templateUrl: "app/userInfoCard/userInfoCard.html",
 			restrict: 'E',
 			scope: {
 				user: '=',

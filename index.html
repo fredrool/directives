@@ -11,22 +11,41 @@
   <link rel="stylesheet" href="styles/styles.css">
   <!-- endinject -->
 </head>
-<body class="container" ng-controller="main">
- 	<user-info-card user="user1" collapsed="true"></user-info-card>
- 	<user-info-card user="user2"></user-info-card>
+<body class="container">
+	<h4>
+		<a href="#/cards" class="btn btn-info" role="button">User Info Cards</a>
+		<a href="#/video" class="btn btn-info" role="button">Video</a>
+		<a href="#/click" class="btn btn-info" role="button">MyClick</a>
+		<a href="#/selected" class="btn btn-info" role="button">Selected</a>
+		<a href="#/watch" class="btn btn-info" role="button">Watch</a>
+	</h4>
+	
+ 	<div ng-view></div>
 
  	<!-- bower:js -->
  	<script src="bower_components/jquery/dist/jquery.js"></script>
  	<script src="bower_components/angular/angular.js"></script>
+ 	<script src="bower_components/angular-route/angular-route.js"></script>
  	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
  	<!-- endbower -->
 
 	<!-- inject:js -->
 	<script src="app/app.js"></script>
-	<script src="app/userInfoCard.directive.js"></script>
-	<script src="app/removeFriend.directive.js"></script>
-	<script src="app/main.controller.js"></script>
-	<script src="app/address.directive.js"></script>
+	<script src="app/watch/watch.controller.js"></script>
+	<script src="app/watch/fontScale.directive.js"></script>
+	<script src="app/video/video.controller.js"></script>
+	<script src="app/video/spacebarSupport.directive.js"></script>
+	<script src="app/video/eventPause.directive.js"></script>
+	<script src="app/userInfoCard/userInfoCard.directive.js"></script>
+	<script src="app/userInfoCard/userInfoCard.controller.js"></script>
+	<script src="app/userInfoCard/removeFriend.directive.js"></script>
+	<script src="app/userInfoCard/address.directive.js"></script>
+	<script src="app/selected/userTile.directive.js"></script>
+	<script src="app/selected/userClickSelect.directive.js"></script>
+	<script src="app/selected/selected.controller.js"></script>
+	<script src="app/click/myClick.directive.js"></script>
+	<script src="app/click/click.controller.js"></script>
+	<script src="app/app.route.js"></script>
 	<!-- endinject -->
 </body>
 </html>

@@ -1,5 +1,7 @@
 (function(){
-	angular.module('app').controller('main', function($scope) {
+	'use strict';
+	
+	angular.module('app').controller('userInfoCards', function($scope) {
 		$scope.user1 = {
 			name: 'Iron Man',
 			address: {

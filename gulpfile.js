@@ -23,8 +23,8 @@ gulp.task('watch', ['serve'], function() {
 gulp.task('serve', ['inject'], function() {
 	return gulp.src(paths.appRoot)
 	.pipe(webserver({
-		livereload: true,
-	    open: true
+		livereload: true
+	    // open: true
 	}));
 });
 
