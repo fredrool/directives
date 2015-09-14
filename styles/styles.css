@@ -5,3 +5,16 @@ body {
 .hilight {
 	color: red;
 }
+
+.user-ok {
+
+}
+.user-warning {
+	color: orange;
+}
+.user-problem {
+	color: cyan;
+}
+.user-error {
+	color: red;
+}

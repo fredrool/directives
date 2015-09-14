@@ -11,9 +11,38 @@
 				user: '=',
 				initialCollapsed: '@collapsed'
 			},
+			// link: function(scope, el, attrs) {
+			// 	scope.nextState = function() {
+			// 		scope.user.level++;
+			// 		scope.user.level = scope.user.level % 3;
+					// setState();
+				// }
+
+				// Moved to its own directive
+				// function setState() {
+				// 	switch(scope.user.level) {
+				// 		case 0:
+				// 			el.find('.panel-body').css('background-color', 'white');
+				// 			break;
+				// 		case 1:
+				// 			el.find('.panel-body').css('background-color', 'yellow');
+				// 			break;
+				// 		case 2:
+				// 			el.find('.panel-body').css('background-color', 'red');
+				// 			break;
+				// 	}
+				// }
+
+				// setState();
+			// },
 			// replace: true // Deprecated since 1.3
 			controller: function($scope) {
 				$scope.collapsed = ($scope.initialCollapsed === 'true');
+
+				$scope.nextState = function() {
+					$scope.user.level++;
+					$scope.user.level = $scope.user.level % 4;
+				}
 
 				$scope.hero = function(user) {
 					user.rank = 'SuperHero !';

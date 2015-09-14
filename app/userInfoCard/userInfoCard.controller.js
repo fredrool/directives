@@ -13,7 +13,8 @@
 				'Thor',
 				'Hulk',
 				'Captain America'
-			]
+			],
+			level: 0
 		}
 
 		$scope.user2 = {
@@ -27,7 +28,8 @@
 				'Thor',
 				'Hulk',
 				'Black Widow'
-			]
+			],
+			level: 1
 		}
 
 		// Breaking encapsulation, moved to directive !
