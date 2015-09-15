@@ -32,6 +32,16 @@
 			level: 1
 		}
 
+		$scope.droid1 = {
+			name: 'R2-D2',
+			specifications: {
+				manufacturer: 'Industrial Automaton',
+				type: 'Astromech',
+				productLine: 'R2 series'
+			},
+			level: 1
+		}
+
 		// Breaking encapsulation, moved to directive !
 		// $scope.hero = function(user) {
 		// 	user.rank = 'Hero';

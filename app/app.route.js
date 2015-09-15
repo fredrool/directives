@@ -24,6 +24,14 @@
 	        templateUrl: 'app/watch/watch.html',
 	        controller: 'watch'
 	      }).
+	      when('/displayBox', {
+	        templateUrl: 'app/displayBox/base.html',
+	        controller: 'displayBox'
+	      }).
+	      when('/questions', {
+	        templateUrl: 'app/questions/base.html',
+	        controller: 'questions'
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });

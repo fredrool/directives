@@ -1,11 +1,10 @@
-body {
-	font-family: 'Arial';
-}
 
+/* Selected */
 .hilight {
 	color: red;
 }
 
+/* User Info Cards */
 .user-ok {
 
 }
@@ -17,4 +16,14 @@ body {
 }
 .user-error {
 	color: red;
+}
+
+/* Display Box */
+.box-size {
+	width: 350px;
+}
+.inner-box-margins {
+	float: right;
+	margin-top: -15px;
+	margin-right: -14px;
 }
