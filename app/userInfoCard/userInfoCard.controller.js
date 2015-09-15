@@ -1,8 +1,8 @@
 (function(){
 	'use strict';
 	
-	angular.module('app').controller('userInfoCards', function($scope) {
-		$scope.user1 = {
+	angular.module('app').controller('userInfoCard', function($scope) {
+		$scope.person1 = {
 			name: 'Iron Man',
 			address: {
 				street: 'Stark Tower Complex',
@@ -17,7 +17,7 @@
 			level: 0
 		}
 
-		$scope.user2 = {
+		$scope.person2 = {
 			name: 'Captain America',
 			address: {
 				street: 'US Army Base',

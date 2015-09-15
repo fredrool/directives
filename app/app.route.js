@@ -5,8 +5,8 @@
 	  function($routeProvider) {
 	    $routeProvider.
 	      when('/cards', {
-	        templateUrl: 'app/userInfoCard/cards.html',
-	        controller: 'userInfoCards'
+	        templateUrl: 'app/userInfoCard/userInfoCard.html',
+	        controller: 'userInfoCard'
 	      }).
 	      when('/video', {
 	        templateUrl: 'app/video/video.html',
