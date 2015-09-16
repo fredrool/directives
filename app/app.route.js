@@ -36,6 +36,10 @@
 	        templateUrl: 'app/lazyRender/lazyRender.html',
 	        controller: 'lazyRender'
 	      }).
+	      when('/repeat', {
+	        templateUrl: 'app/repeat/repeat.html',
+	        controller: 'repeat'
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });
