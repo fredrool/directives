@@ -8,7 +8,10 @@
 			scope: {
 				droid: '=',
 				initialCollapsed: '@collapsed'
-			}
+			},
+			controllerAs: 'vm',
+			bindToController: true,
+			controller: function() {} // Must declare a controller to use bindToController, even if empty
 		}
 	});
 })();

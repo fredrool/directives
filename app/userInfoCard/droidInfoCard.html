@@ -2,9 +2,9 @@
 	name and collapsed are 1-way binding (@ in directive)
 	level is 2-way binding so no curly braces (= in directive)
 -->
-<user-panel name="{{droid.name}}" collapsed="{{initialCollapsed}}" level="droid.level">
+<user-panel name="{{vm.droid.name}}" collapsed="{{vm.initialCollapsed}}" level="vm.droid.level">
 	<h4>Specifications:</h4>
-	{{droid.specifications.manufacturer}}<br/>
-	{{droid.specifications.type}}<br/>
-	{{droid.specifications.productLine}}
+	{{vm.droid.specifications.manufacturer}}<br/>
+	{{vm.droid.specifications.type}}<br/>
+	{{vm.droid.specifications.productLine}}
 </div>
