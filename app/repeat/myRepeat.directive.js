@@ -1,7 +1,7 @@
 (function(){
 	'use strict';
 
-	angular.module('app').directive('myRepeat', function() {
+	angular.module('app').directive('myRepeat', function($compile) {
 		return {
 			restrict: 'A',
 			transclude: 'element',
@@ -26,16 +26,23 @@
 
 						childScope[itemString] = collection[i];
 						transclude(childScope, function(clone) {
-							el.before(clone);
+							var template = $compile(
+								'<div class="panel panel-primary">' + 
+									'<div class="panel-heading">{{' + itemString + '.name}}</div>' + 
+									'<div class="panel-body"/>' + 
+								'</div>');
+							
+							var wrapper = template(childScope);
+							wrapper.find('.panel-body').append(clone);
+
+							el.before(wrapper);
 							var item = {};
-							item.el = clone;
+							item.el = wrapper;
 							item.scope = childScope;
 							elements.push(item);
 						})
 					}
 				});
-
-				
 			}
 		}
 	})
