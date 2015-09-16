@@ -32,6 +32,10 @@
 	        templateUrl: 'app/questions/base.html',
 	        controller: 'questions'
 	      }).
+	      when('/lazyRender', {
+	        templateUrl: 'app/lazyRender/lazyRender.html',
+	        controller: 'lazyRender'
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });
