@@ -40,6 +40,10 @@
 	        templateUrl: 'app/repeat/repeat.html',
 	        controller: 'repeat'
 	      }).
+	      when('/require', {
+	        templateUrl: 'app/require/require.html',
+	        controller: 'require'
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });
