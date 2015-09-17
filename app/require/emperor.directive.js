@@ -2,13 +2,15 @@
 	'use strict';
 
 	angular.module('app').directive('emperor', function() {
+		var name = 'The Emperor';
+
 		return {
 			scope: true,
-			link: {
-				pre: function($scope, el, attrs) {
-					el.data('name', 'The Emperor');
-					$scope.master = 'The Emperor';
-				}
+			controller: function($scope) {
+				this.name = name;
+			},
+			link: function($scope, el, attrs) {
+				el.data('name', name);
 			}
 		}
 	})
