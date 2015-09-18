@@ -14,13 +14,3 @@
 	<button ng-show="!vm.person.rank" class="btn btn-success" ng-click="vm.upgradeArmor(vm.person)">Upgrade Armor</button>
 </user-panel>
 
-<modal open="vm.showKnightModal" options="{width: '100px', left: '40px'}" on-close="vm.knightModalDone(response)">
-	<div class="panel panel-primary">
-		<div class="panel-heading">Upgrade Armor</div>
-		<div class="panel-body">
-			<p>Do you want to Upgrade {{vm.person.name}}'s armor ?</p>
-			<button class="btn btn-success" ng-click="vm.knightDialogDone(true, vm.person)">Yes</button>
-			<button class="btn btn-danger" ng-click="vm.knightDialogDone(false)">No</button>
-		</div>
-	</div>
-</modal>

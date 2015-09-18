@@ -11,21 +11,30 @@
 			},
 			controllerAs: 'vm',
 			bindToController: true,
-			controller: function() {
-				this.upgradeArmor = function(person) {
-					this.showKnightModal = true;
-				}
+			controller: function($modal) {
+				var that = this;
 
-				this.knightDialogDone = function(response, person) {
-					this.showKnightModal = false;
-					if(response) {
-						// Business logic extracted into a service with a promise
-						armorPolicy.upgradeArmor(person).then(function() {
-							person.rank = 'Armor Upgraded !';
-						}, function(person) {
-							alert('Sorry, ' + person.name + ' cannot get the armor upgrade.');
-						})
-					}
+				this.upgradeArmor = function(person) {
+					var modalInstance = $modal.open({
+						templateUrl: 'app/userInfoCard/confirmation.html',
+						controller: 'confirmation',
+						resolve: {
+							person: function() {
+								return that.person;
+							}
+						}
+					})
+
+					modalInstance.result.then(function(answer) {
+						if(answer) {
+							// Business logic extracted into a service with a promise
+							armorPolicy.upgradeArmor(that.person).then(function() {
+								that.person.rank = 'Armor Upgraded !';
+							}, function(person) {
+								alert('Sorry, ' + person.name + ' cannot get the armor upgrade.');
+							})
+						}
+					})
 				}
 
 				this.removeFriend = function(friend) {
