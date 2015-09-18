@@ -14,7 +14,11 @@
 				'Hulk',
 				'Captain America'
 			],
-			level: 0
+			level: 0,
+			armorType: 'Metalic',
+			armorManufacturer: 'Stark',
+			armorCategory: 'Robotic',
+			armorCore: 'AI'
 		}
 
 		$scope.person2 = {
@@ -29,7 +33,9 @@
 				'Hulk',
 				'Black Widow'
 			],
-			level: 1
+			level: 1,
+			armorType: 'Cloth',
+			armorManufacturer: 'US Army'
 		}
 
 		$scope.droid1 = {

@@ -9,7 +9,7 @@
 		</li>
 	</ul>
 	<div ng-show="!!vm.person.rank">
-		Rank: {{vm.person.rank}}
+		{{vm.person.rank}}
 	</div>
-	<button ng-show="!vm.person.rank" class="btn btn-success" ng-click="vm.hero(vm.person)">Hero</button>
+	<button ng-show="!vm.person.rank" class="btn btn-success" ng-click="vm.upgradeArmor(vm.person)">Upgrade Armor</button>
 </user-panel>

@@ -1,7 +1,7 @@
 (function(){
 	'use strict';
 
-	angular.module('app').directive('personInfoCard', function() {
+	angular.module('app').directive('personInfoCard', function(armorPolicy) {
 		return {
 			templateUrl: "app/userInfoCard/personInfoCard.html",
 			restrict: 'E',
@@ -12,8 +12,13 @@
 			controllerAs: 'vm',
 			bindToController: true,
 			controller: function() {
-				this.hero = function(person) {
-					person.rank = 'SuperHero !';
+				this.upgradeArmor = function(person) {
+					// Business logic extracted into a service with a promise
+					armorPolicy.upgradeArmor(person).then(function() {
+						person.rank = 'Armor Upgraded !';
+					}, function(person) {
+						alert('Sorry, ' + person.name + ' cannot get the armor upgrade.');
+					})
 				}
 
 				this.removeFriend = function(friend) {
