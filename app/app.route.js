@@ -48,6 +48,10 @@
 	        templateUrl: 'app/tabstrip/base.html',
 	        controller: 'tabstrip'
 	      }).
+	      when('/userList', {
+	        templateUrl: 'app/userList/userList.html',
+	        controller: 'userList'
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });

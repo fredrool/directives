@@ -24,6 +24,7 @@
 		<a href="#/repeat" class="btn btn-info" role="button">MyRepeat</a>
 		<a href="#/require" class="btn btn-info" role="button">Master</a>
 		<a href="#/tabstrip" class="btn btn-info" role="button">Tabstrip</a>
+		<a href="#/userList" class="btn btn-info" role="button">User List</a>
 	</h4>
 	
  	<div ng-view></div>
@@ -37,15 +38,20 @@
 
 	<!-- inject:js -->
 	<script src="app/app.js"></script>
-	<script src="app/require/vader.directive.js"></script>
-	<script src="app/require/starkiller.directive.js"></script>
-	<script src="app/require/require.controller.js"></script>
-	<script src="app/require/emperor.directive.js"></script>
+	<script src="app/selected/userTile.directive.js"></script>
+	<script src="app/selected/userClickSelect.directive.js"></script>
+	<script src="app/selected/selected.controller.js"></script>
+	<script src="app/watch/watch.controller.js"></script>
+	<script src="app/watch/fontScale.directive.js"></script>
 	<script src="app/video/video.controller.js"></script>
 	<script src="app/video/spacebarSupport.directive.js"></script>
 	<script src="app/video/eventPause.directive.js"></script>
-	<script src="app/watch/watch.controller.js"></script>
-	<script src="app/watch/fontScale.directive.js"></script>
+	<script src="app/userList/userList.controller.js"></script>
+	<script src="app/userList/masterUsers.directive.js"></script>
+	<script src="app/userList/detailUsers.directive.js"></script>
+	<script src="app/tabstrip/tabstrip.controller.js"></script>
+	<script src="app/tabstrip/swTabstrip.directive.js"></script>
+	<script src="app/tabstrip/swPane.directive.js"></script>
 	<script src="app/userInfoCard/userPanel.directive.js"></script>
 	<script src="app/userInfoCard/userInfoCard.controller.js"></script>
 	<script src="app/userInfoCard/stateDisplay.directive.js"></script>
@@ -54,12 +60,10 @@
 	<script src="app/userInfoCard/droidInfoCard.directive.js"></script>
 	<script src="app/userInfoCard/armorPolicy.service.js"></script>
 	<script src="app/userInfoCard/address.directive.js"></script>
-	<script src="app/tabstrip/tabstrip.controller.js"></script>
-	<script src="app/tabstrip/swTabstrip.directive.js"></script>
-	<script src="app/tabstrip/swPane.directive.js"></script>
-	<script src="app/selected/userTile.directive.js"></script>
-	<script src="app/selected/userClickSelect.directive.js"></script>
-	<script src="app/selected/selected.controller.js"></script>
+	<script src="app/require/vader.directive.js"></script>
+	<script src="app/require/starkiller.directive.js"></script>
+	<script src="app/require/require.controller.js"></script>
+	<script src="app/require/emperor.directive.js"></script>
 	<script src="app/repeat/repeat.controller.js"></script>
 	<script src="app/repeat/myRepeat.directive.js"></script>
 	<script src="app/questions/questions.controller.js"></script>
@@ -67,10 +71,10 @@
 	<script src="app/lazyRender/myLazyRender.directive.js"></script>
 	<script src="app/lazyRender/lazyRender.controller.js"></script>
 	<script src="app/lazyRender/echo.directive.js"></script>
-	<script src="app/click/myClick.directive.js"></script>
-	<script src="app/click/click.controller.js"></script>
 	<script src="app/displayBox/displayBox.directive.js"></script>
 	<script src="app/displayBox/displayBox.controller.js"></script>
+	<script src="app/click/myClick.directive.js"></script>
+	<script src="app/click/click.controller.js"></script>
 	<script src="app/app.route.js"></script>
 	<!-- endinject -->
 </body>
