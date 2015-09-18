@@ -44,6 +44,10 @@
 	        templateUrl: 'app/require/require.html',
 	        controller: 'require'
 	      }).
+	      when('/tabstrip', {
+	        templateUrl: 'app/tabstrip/base.html',
+	        controller: 'tabstrip'
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });
