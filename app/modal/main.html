@@ -1,0 +1,12 @@
+<h1>Modal Sample</h1>
+<a href="" ng-click="openModal()">Click Here</a>
+
+<modal open="modalOpen" options="{top:35, heigth:300}" on-close="modalClose(response)">
+<div class="panel panel-primary" ng-controller="modal">
+	<div class="panel-heading">Are you sure ?</div>
+	<div class="panel-body">
+		<div class="btn btn-success" ng-click="close('yes')">Yes</div>
+		<div class="btn btn-success" ng-click="close('no')">No</div>
+	</div>
+</div>
+</modal>

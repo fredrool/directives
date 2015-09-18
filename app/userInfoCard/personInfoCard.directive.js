@@ -13,12 +13,19 @@
 			bindToController: true,
 			controller: function() {
 				this.upgradeArmor = function(person) {
-					// Business logic extracted into a service with a promise
-					armorPolicy.upgradeArmor(person).then(function() {
-						person.rank = 'Armor Upgraded !';
-					}, function(person) {
-						alert('Sorry, ' + person.name + ' cannot get the armor upgrade.');
-					})
+					this.showKnightModal = true;
+				}
+
+				this.knightDialogDone = function(response, person) {
+					this.showKnightModal = false;
+					if(response) {
+						// Business logic extracted into a service with a promise
+						armorPolicy.upgradeArmor(person).then(function() {
+							person.rank = 'Armor Upgraded !';
+						}, function(person) {
+							alert('Sorry, ' + person.name + ' cannot get the armor upgrade.');
+						})
+					}
 				}
 
 				this.removeFriend = function(friend) {

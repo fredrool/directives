@@ -52,6 +52,10 @@
 	        templateUrl: 'app/userList/userList.html',
 	        controller: 'userList'
 	      }).
+	      when('/modal', {
+	        templateUrl: 'app/modal/main.html',
+	        controller: 'main'
+	      }).
 	      otherwise({
 	        redirectTo: '/'
 	      });
